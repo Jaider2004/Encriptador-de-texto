@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/0fef83dd6e.js" crossorigin="anonymous"></script>
+
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/Imagenes/logo.png"  alt="Logo.png">
+    </header>
+    
+    <main>
+    <section>
+        <textarea class="textarea" cols="40" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+        <div class="informacion">
+            <p>Nota: Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+            <button class="encriptar" onclick="botonEncriptar()">Encriptar</button>
+            <button class="desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+        </div>
+    </section>
+    <section>
+        <textarea class="resultado" cols="28" rows="13"></textarea>
+        <div class="btn-copiar"> 
+            <button class="copiar">copiar</button>
+        </div>
+    </main>
+    
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="/Imagenes/Firma.png" alt="Logo Jhon_Jaider">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Proyecto encriptador de texto</h2>
+                <p>Desarrollado por Jhon Jaider Echavarria Tapias</p>
+            </div>
+            <div class="box">
+                <h2>SIGUEME</h2>
+                <div class="red-social">
+                    <a href="https://github.com/Jaider04" class="fa-brands fa-github" target="_blank"></a>
+                    <a href="https://www.instagram.com/jaider_405/" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/jhon-jaider-echavarria-tapias/" class="fa-brands fa-linkedin" target="_blank"></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="fa-solid fa-envelope" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b></b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <script src="Script.js"></script>
+</body>
+
+</html>

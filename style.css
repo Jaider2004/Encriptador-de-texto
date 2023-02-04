@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+
+
+*{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 5px;
+    width: 10%;
+    margin-bottom: 40px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.textarea {
+    border: none;
+    color: #0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+    background-color: white;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 0px;
+    margin-right: 100px;
+    resize:none;
+}
+
+.resultado {
+    border: none;
+    color: #0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+    background-color: #CED4DA;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 0px;
+    margin-left: 10px;
+    resize:none;
+    box-shadow: 0px 0px 20px black;
+}
+
+::placeholder {color: #0A3871;}
+    .textarea:focus{
+        outline: none;
+    }
+
+.mensaje {
+    background: white;
+    background-image: url(/Imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+.desencriptar {
+    background: #D8DFE8;
+    border: 1PX solid  #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    
+}
+
+.desencriptar:hover{
+    opacity: 0.5;
+}
+
+.encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    
+}
+
+.encriptar:hover{
+    opacity: 0.5;
+}
+
+.copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    position: absolute;
+    width: 336px;
+}
+
+.copiar:hover{
+    opacity: 0.5;
+}
+
+.informacion {
+    margin-top: 110px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    color: #495057;
+    font-size: 18px;
+}
+
+
+.btn-copiar {
+    align-items: center;
+    margin-top: 15px;
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #0A3871;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 0px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0A3871;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #011c3d;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
